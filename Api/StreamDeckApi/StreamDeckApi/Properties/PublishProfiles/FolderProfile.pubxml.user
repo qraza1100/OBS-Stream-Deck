@@ -2,8 +2,8 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>D:\Work\Published Apps\Stream</_PublishTargetUrl>
-    <History>True|2026-05-15T05:18:04.6814841Z||;</History>
+    <_PublishTargetUrl>D:\Work\Published Apps\Stream\Api</_PublishTargetUrl>
+    <History>True|2026-05-15T17:28:12.8021198Z||;True|2026-05-15T22:27:32.6276526+05:00||;True|2026-05-15T21:33:07.5354641+05:00||;True|2026-05-15T10:18:04.6814841+05:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
