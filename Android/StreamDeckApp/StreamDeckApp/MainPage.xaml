@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamDeckApp.MainPage"
+             BackgroundColor="#121212">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="OBS CONTROL PANEL"
+               TextColor="#008080"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Frame BackgroundColor="#1E1E1E" BorderColor="#333" Padding="15">
+            <VerticalStackLayout Spacing="5">
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <BoxView x:Name="StatusDot" WidthRequest="12" HeightRequest="12" CornerRadius="6" VerticalOptions="Center" BackgroundColor="Gray"/>
+                    <Label x:Name="StatusLabel" Text="Checking Status..." TextColor="#E0E0E0" FontSize="14" />
+                </HorizontalStackLayout>
+
+                <Label x:Name="CurrentSceneLabel"
+                       Text="Current Scene: -"
+                       TextColor="#008080"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Select Scene" TextColor="#888" FontSize="12" Margin="5,0"/>
+            <Frame Padding="0" CornerRadius="8" BackgroundColor="#252525" BorderColor="#444">
+                <Picker x:Name="ScenePicker"
+                        Title="Choose a scene"
+                        TitleColor="#666"
+                        TextColor="White"
+                        HorizontalOptions="Fill"
+                        SelectedIndexChanged="OnScenePickerChanged" />
+            </Frame>
+        </VerticalStackLayout>
+
+        <Button Text="REFRESH SYSTEM"
+                BackgroundColor="#008080"
+                TextColor="White"
+                CornerRadius="8"
+                Clicked="OnRefreshClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

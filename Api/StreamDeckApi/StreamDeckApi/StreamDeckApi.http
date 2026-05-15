@@ -1,0 +1,6 @@
+@StreamDeckApi_HostAddress = http://localhost:5018
+
+GET {{StreamDeckApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
